@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princípios Básicos do JavaScript Moderno</title>
+</head>
+<body>
+    <button onclick="alert('ok!')">Clique</button> <!-- js+html, má pratica -->
+
+    <button id="meuBotao">Clique</button>
+    <script>
+        document.getElementById('meuBotao').addEventListener('click', () => { alert('ok!')}) 
+    </script><!--  js/html, boa pratica -->
+</body>
+</html>
