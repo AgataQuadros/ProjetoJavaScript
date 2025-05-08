@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function(){
         let i = 1;
 
         while (i <= 3) {
-            addItem('while: ' +i);
+            addItem('while: ' + i);
+            i++;
         }
     });
 
