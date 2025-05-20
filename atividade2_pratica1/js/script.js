@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     document.getElementById('somar').addEventListener('click', function(){
-        let i = 0;
-
-        resultado.textContent = ++i;
-    })
+        let i = 1;
+        resultado.textContent = +i;
+    });
+    document.getElementById('subitrair').addEventListener('click', function(){
+        let i = 1;
+        resultado.textContent = -i;
+    });
+    document.getElementById('zerar').addEventListener('click', function(){
+    });
 });
