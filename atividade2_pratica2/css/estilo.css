@@ -19,6 +19,10 @@ main {
     flex-direction: column;
 }
 
+section {
+    padding-top: 20px;
+}
+
 h1 {
     text-align: center;
     font-size: 3rem;
