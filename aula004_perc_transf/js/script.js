@@ -25,7 +25,7 @@ document.getElementById('botao-paraCada').addEventListener('click', function() {
     `
 });
 
-document.getElementById('botao-paraCada').addEventListener('click', function() {
+document.getElementById('botao-mapear').addEventListener('click', function() {
 
     let resultado = '';
 
@@ -33,10 +33,7 @@ document.getElementById('botao-paraCada').addEventListener('click', function() {
         resultado += `Posição ${indice}: ${numero}\n`;
     })
 
-    document.getElementById('resultado-paraCada').innerHTML = `
-    <strong>Array original:</strong>${JSON.stringify(numeros)}<br><br>
-    <strong>Iteração com forEach:</strong>${resultado}<br>
-    <small>Observação: for each não retorna um novo array</small>
+    document.getElementById('resultado-mapear').innerHTML = `
     `
 });
 
