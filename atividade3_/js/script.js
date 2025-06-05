@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
-    const saida = document.getElementById('saida')
+    const saida = document.getElementById('saida');
     const total = document.getElementById('resultado');
+    const limpar = elemento => elemento.innerHTML = '';
 
     const produtos = [
         { nome: 'Sabonete natural', preco: 15.00, categoria: 'Cosméticos'},
@@ -12,10 +13,12 @@ document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('opcoes').addEventListener('change', function(){
         
         if (opcoes.value === 'al') {
+            limpar(saida);
+
             let calcular = 0
 
             let produtoFiltrado = produtos.filter(function (valores) {
-                return valores.categoria === 'alimento'; 
+                return valores.categoria === 'Alimentos'; 
             });
 
             produtoFiltrado.forEach(function (valores) {
@@ -27,14 +30,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 saida.appendChild(elemento);
 
-                calculo = calcular + valores.preco
+                calcular = calcular + valores.preco
             });
             
-            total.innerHTML = `Total: ${calculo}`;
+            total.innerHTML = `Total: ${calcular}`;
 
         }
 
         else if (opcoes.value === 'cos') {
+            limpar(saida);
+
             let calcular = 0
 
             let produtoFiltrado = produtos.filter(function (valores) {
@@ -50,14 +55,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 saida.appendChild(elemento);
 
-                calculo = calcular + valores.preco
+                calcular = calcular + valores.preco
             });
             
-            total.innerHTML = `Total: ${calculo}`;
+            total.innerHTML = `Total: ${calcular}`;
 
         }
 
         else {
+            limpar(saida);
+
             let calcular = 0
 
             produtos.forEach(function (valores) {
@@ -69,11 +76,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 saida.appendChild(elemento);
 
-                calculo = calcular + valores.preco
+                calcular = calcular + valores.preco
             });
             
-            total.innerHTML = `Total: ${calculo}`;
-
+            total.innerHTML = `Total: ${calcular}`;
         }
     });
 });

@@ -19,12 +19,14 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-h3 {
-    color: rgb(123, 28, 187);
-    margin-top: 20px;
-    font-size: 20px;
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: row;
 }
-
+li {
+    margin: 10px;
+}
 main {
     margin-bottom: 30px;
     background-color: #fff;
