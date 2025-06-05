@@ -13,33 +13,15 @@
     </header>
 
     <main>
+        <label for="filtro">Filtrar por categoria:</label>
         <select id="opcoes">
             <option value="td" id="td">Todos</option>
             <option value="al" id="al">Alimentos</option>
             <option value="cos" id="cos">Cosméticos</option>
         </select>
 
-        <div>
-            <h3 id="cos">Sabonete natural</h3>
-            <p id="valor">R$ 15,00</p>
-        </div>
-
-        <div>
-            <h3 id="cos">Shampoo orgânico</h3>
-            <p id="valor">R$ 25,00</p>
-        </div>
-
-        <div>
-            <h3 id="al">Granola artezanal</h3>
-            <p id="valor">R$ 18,50</p>
-        </div>
-
-        <div>
-            <h3 id="al">Mel puro</h3>
-            <p id="valor">R$ 22,00</p>
-        </div>
-
-        <div class="resultado" id="resultado"> Total: </div>
+        <ul id="saida"></ul>
+        <div class="resultado" id="resultado"></div>
     </main>
     <script src="js/script.js"></script>
 </body>
